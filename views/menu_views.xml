@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu principal -->
+    <menuitem id="menu_film_root" 
+              name="Production de Films"
+              web_icon="film_production,static/description/icon.png"
+              sequence="10"/>
+
+    <!-- Sous-menus -->
+    <menuitem id="menu_film_master"
+              name="Films"
+              parent="menu_film_root"
+              sequence="10"/>
+
+    <!-- Éléments de menu pour chaque modèle -->
+    <menuitem id="menu_film"
+              name="Films"
+              parent="menu_film_master"
+              action="action_film"
+              sequence="10"/>
+
+    <menuitem id="menu_location"
+              name="Lieux de tournage"
+              parent="menu_film_master"
+              action="action_location"
+              sequence="20"/>
+
+    <menuitem id="menu_shooting"
+              name="Tournages"
+              parent="menu_film_master"
+              action="action_shooting"
+              sequence="30"/>
+
+    <menuitem id="menu_production_company"
+              name="Maisons de production"
+              parent="menu_film_master"
+              action="action_production_company"
+              sequence="40"/>
+
+    <menuitem id="menu_director"
+              name="Réalisateurs"
+              parent="menu_film_master"
+              action="action_director"
+              sequence="50"/>
+</odoo>

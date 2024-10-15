@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_film_film_user,film.film.user,model_film_film,base.group_user,1,1,1,1
+access_film_location_user,film.location.user,model_film_location,base.group_user,1,1,1,1
+access_film_shooting_user,film.shooting.user,model_film_shooting,base.group_user,1,1,1,1
+access_film_production_company_user,film.production.company.user,model_film_production_company,base.group_user,1,1,1,1
+access_film_director_user,film.director.user,model_film_director,base.group_user,1,1,1,1

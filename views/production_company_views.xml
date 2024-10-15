@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue form pour Production Company -->
+    <record id="production_company_view_form" model="ir.ui.view">
+        <field name="name">film.production.company.form</field>
+        <field name="model">film.production.company</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="capital"/>
+                        </group>
+                        <group>
+                            <field name="film_count"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Films produits">
+                            <field name="film_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue tree pour Production Company -->
+    <record id="production_company_view_tree" model="ir.ui.view">
+        <field name="name">film.production.company.tree</field>
+        <field name="model">film.production.company</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="film_count"/>
+                <field name="capital"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action pour Production Company -->
+    <record id="action_production_company" model="ir.actions.act_window">
+        <field name="name">Maisons de production</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">film.production.company</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

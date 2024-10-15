@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue form pour Location -->
+    <record id="location_view_form" model="ir.ui.view">
+        <field name="name">film.location.form</field>
+        <field name="model">film.location</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="film_count"/>
+                    </group>
+                    <notebook>
+                        <page string="Films tournés">
+                            <field name="film_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue tree pour Location -->
+    <record id="location_view_tree" model="ir.ui.view">
+        <field name="name">film.location.tree</field>
+        <field name="model">film.location</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="film_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action pour Location -->
+    <record id="action_location" model="ir.actions.act_window">
+        <field name="name">Lieux de tournage</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">film.location</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

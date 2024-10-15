@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue form pour Director -->
+    <record id="director_view_form" model="ir.ui.view">
+        <field name="name">film.director.form</field>
+        <field name="model">film.director</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="birth_date"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="marital_status"/>
+                            <field name="film_count"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Films réalisés">
+                            <field name="film_ids"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vue tree pour Director -->
+    <record id="director_view_tree" model="ir.ui.view">
+        <field name="name">film.director.tree</field>
+        <field name="model">film.director</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="film_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action pour Director -->
+    <record id="action_director" model="ir.actions.act_window">
+        <field name="name">Réalisateurs</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">film.director</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
