@@ -2,6 +2,12 @@
 
 Ce module Odoo permet de gérer les tournages de films, les réalisateurs, les lieux de tournage et les maisons de production.
 
+## Développeurs du module 
+ * #### Moussa THIOR
+ * #### Mamadou SENE
+ * #### Couly FAYE
+ * #### Ndeye Khady SY
+
 ## Fonctionnalités
 
 Le module offre les fonctionnalités suivantes :
@@ -88,3 +94,9 @@ Les contributions sont les bienvenues ! N'hésitez pas à forker le projet et à
 ## Licence
 
 Ce module est sous licence LGPL-3.0. Voir le fichier `LICENSE` pour plus de détails.
+
+
+
+
+
+
