@@ -12,7 +12,12 @@
         - Les maisons de production
         - Les réalisateurs
     """,
-    'author': "Groupe 2",
+    'author': """ 
+        - Moussa THIOR
+        - Mamadou SENE
+        - Couly FAYE
+        - Ndeye Khady SY
+    """,
     'sequence': 4,
     'website': "https://www.ucad.edu.sn",
     'version': '1.0',
